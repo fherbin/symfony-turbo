@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block layout %}
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Test Symfony turbo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('product--list') }}">Liste des produits</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <turbo-frame id="body" src="{{ path('product--list') }}">
+            <div class="row">
+                <div class="col"><p>En cours de chargement ...</p></div>
+            </div>
+        </turbo-frame>
+    </div>
+{% endblock %}

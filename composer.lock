@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32b63c5d379b25d5120b938fa1e1b544",
+    "content-hash": "d6a9e1469a75ec302c72f3da712d350e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -8901,6 +8901,7 @@
         "symfony/monolog-bundle": 20,
         "symfony/runtime": 20,
         "symfony/twig-bundle": 20,
+        "symfony/ux-turbo": 20,
         "symfony/ux-turbo-mercure": 20,
         "symfony/browser-kit": 20,
         "symfony/css-selector": 20,

@@ -4,7 +4,7 @@ services:
   php:
     build:
       context: .
-      target: symfony_php
+      target: symfony_php_debug
       args:
         SYMFONY_VERSION: ${SYMFONY_VERSION:-}
         STABILITY: dev
